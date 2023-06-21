@@ -67,13 +67,13 @@ function generateCustomPoster(event) {
   // TODO: Create a custom poster object with the entered values
 const newPost = {
 
-    image : "https://th-thumbnailer.cdn-si-edu.com/zzkTp0afmWR4Kk2y9vydeIKCVwY=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/f8/b7/f8b7c715-04a2-463a-8725-cfabf98e089d/42-18622201.jpg",
+    image : "https://i.natgeofe.com/k/b6b9720a-1b63-4d14-849e-03dd415cd806/pufferfish-closeup_16x9.jpg?w=1200",
     quote : inputquote,
     title : inputTitle,
 };
 
   // TODO: Call the function to update the DOM with the values from the custom poster object
-  updatePoster(newPost.image, newPost.quote, newPost.title);
+  updatePoster(newPost.image, newPost.title, newPost.quote);
 }
 
 // Function to update the poster content in the DOM
