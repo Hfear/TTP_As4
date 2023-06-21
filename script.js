@@ -73,7 +73,7 @@ const newPost = {
 };
 
   // TODO: Call the function to update the DOM with the values from the custom poster object
-  updatePoster(newPost.image, newPost.quote, newPost.title);
+  updatePoster(newPost.image, newPost.title, newPost.quote);
 }
 
 // Function to update the poster content in the DOM
@@ -82,8 +82,8 @@ function updatePoster(imageUrl, title, quote) {
   // TODO: Update the DOM with the values provided for the poster image, title, and quote
 
   img.src = imageUrl;
-  postTitle.textContent = title; 
-  postQuote.textContent = quote; 
+  postTitle.textContent = title.value; 
+  postQuote.textContent = quote.value; 
 
 }
 
