@@ -52,7 +52,6 @@ function generateRandomPoster() {
   // TODO: Call the function to update the DOM with the values from the random poster object
     updatePoster(nPoster.image, nPoster.title, nPoster.quote)
 
-   
 }
 
 // Function to generate a custom poster
@@ -61,8 +60,8 @@ function generateCustomPoster(event) {
 
   // TODO: Retrieve the entered quote and author from the input fields
 
-  const inputquote = document.getElementById("poster-form-quote");
-  const inputTitle = document.getElementById("poster-form-title");
+  const inputquote = document.getElementById("poster-form-quote").value;
+  const inputTitle = document.getElementById("poster-form-title").value;
 
 
   // TODO: Create a custom poster object with the entered values
