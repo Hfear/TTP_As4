@@ -38,7 +38,7 @@ randButton.addEventListener("click", generateRandomPoster);
 
 // Event listener for submit button
 // TODO: Add an event listener to the submitButton that calls a function when clicked
-subButton.addEventListener("click", updatePoster);
+subButton.addEventListener("click", generateCustomPoster);
 
 // Function to generate a random poster
 function generateRandomPoster() {
@@ -83,7 +83,8 @@ function updatePoster(imageUrl, title, quote) {
 
   img.src = imageUrl;
   postTitle.textContent = title; 
-  postQuote.textContent = quote; 
+  postQuote.textContent = quote
+  ; 
 
 }
 
